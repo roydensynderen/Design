@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    background-color: tomato;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 40%;
+    padding: 2rem;
+    margin: 50px auto;
+    border: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: chocolate;
+}

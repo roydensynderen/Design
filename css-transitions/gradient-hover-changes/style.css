@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 95vh;
+    width: 100vw;
+    background: linear-gradient(to right, #B3FFAB, #12FFF7);
+    color: magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-position 0.7s;
+    background-size: 200%;
+    background-position: 0%;
+}
+
+.header:hover {
+    background-position: 50%;
+}
+.header:hover h1 {
+    color: black;
+}
+h1 {
+    font-family: 'Maven Pro', sans-serif;
+    transition: color 0.7s;
+}
