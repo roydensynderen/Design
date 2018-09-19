@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 60vh;
+    width: 100vw;
+    background: url('./cityscape.jpg');
+    background-size: 100%;
+    background-position: center;
+    transition: background-position 0.5s;
+}
+
+.invisibleHeader {
+    opacity: 0;
+    text-align: center;
+    height: 60vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.5);
+    transition: opacity 0.5s;
+}
+
+#heading {
+    color: white;
+    padding: 7rem;
+}
+
+#headingDescription {
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+
+.invisibleHeader:hover {
+    opacity: 1;
+}
+
+.header:hover {
+    background-position: bottom;
+}
