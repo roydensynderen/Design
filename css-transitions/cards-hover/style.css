@@ -4,51 +4,6 @@
     padding: 0;
 }
 
-/* .hoverBtn {
-    display: block;
-    height: 3vh;
-    width: 10vw;
-    cursor: pointer;
-    background-color: orange;
-    border: none;
-    margin: 50px auto;
-}
-
-.hoverBtn:hover ~ .cardContainer {
-    opacity: 1;
-}
-
-.cardContainer {
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity .3s;
-}
-.cardContainer:first-child {
-    transition-delay: 0.3s;
-}
-.cardContainer:last-child {
-    transition-delay: 0.6s;
-}
-
-.firstCard {
-    height: 20vh;
-    width: 10vw;
-    background: red;
-    border: none;
-    margin: 20px;
-}
-
-.secondCard {
-    height: 20vh;
-    width: 10vw;
-    background: blue;
-    border: none;
-    margin: 20px;
-} */
-
 .card-container {
     text-align: center;
     padding: 20px;
@@ -66,6 +21,7 @@
     margin: 20px auto;
     cursor: pointer;
 }
+
 .card {
     height: 200px;
     display: inline-block;
