@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5%;
+}
+
+.container {
+    width: 80%;
+    margin: 1px auto;
+}
+
+.card {
+    height: 250px;
+    width: 250px;
+    margin: 1px auto;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#one {
+    transition: transform .3s ease-in;
+}
+#one:hover {
+    transform: scale(1.2);
+}
+
+#two .card-img {
+    overflow: hidden;
+}
+#two img {
+    transform: scale(1.4) rotate(10deg);
+    transition: transform .3s;
+    overflow: hidden;
+}
+#two:hover img {
+    transform: scale(1) rotate(0);
+}
+
+#three .card-img {
+    overflow: hidden;
+}
+#three img {
+    transition: transform .3s;
+    transform-origin: top left;
+}
+#three:hover img {
+    transform: scale(1.1);
+}
+
+#four .card-img {
+    overflow: hidden;
+}
+#four img {
+    transition: filter .3s, transform .3s;
+}
+#four:hover img {
+    transform: scale(2);
+    filter: blur(1px);
+}
+
+#five .card-img {
+    overflow: hidden;
+}
+#five img {
+    transition: transform .3s, filter .3s;
+}
+#five:hover img {
+    transform: scale(1.5) rotate(10deg);
+    filter: grayscale(100%);
+}
