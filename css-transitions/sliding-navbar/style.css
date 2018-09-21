@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: crimson;
+    height: 60px;
+    padding: 10px;
+    text-align: left;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color .3s;
+}
+
+#header a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#header.open #hidden-nav {
+    transform: translateX(0);
+}
+
+#header.open #nav-toggle {
+    transform: scale(0.8);
+}
+
+#main-nav {
+    text-align: right;
+}
+
+#main-nav li {
+    display: inline-block;
+}
+
+#hidden-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 400px;
+    background-color: crimson;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transition: transform .3s;
+    transform: translateX(-400px);
+    padding: 20px;
+} 
+
+#hidden-nav li {
+    display: block;
+    margin: 5px;
+}
+
+#nav-toggle {
+    background-color: rgba(0, 0, 0, .3);
+    min-height: 40px;
+    position: absolute;
+    top: 10px;
+    right: -55px;
+    padding: 2px;
+    width: 50px;
+    transition: transform .3s ease-in .2s;
+}
+
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    height: 3px;
+    width: 40px;
+    background-color: white;
+}
+
+#nav-toggle span:before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: relative;
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: relative;
+    top: 8px;
+}
