@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: orangered;
+    color: white;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, .3);
+    border: 2px solid rgba(0, 0, 0, .1);
+}
+
+.text p {
+    font-size: 1.1em;
+    padding: 10px 25px;
+}
+
+.text:nth-child(2n+1) {
+    transform: skewX(10deg);
+}
+
+.text:nth-child(2n+2) {
+    transform: skewX(-10deg);
+}
+
+.text:nth-child(2n+1) p {
+    transform: skewX(-10deg);
+}
+
+.text:nth-child(2n+2) p {
+    transform:skewX(10deg);
+}
