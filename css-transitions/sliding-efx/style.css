@@ -3,3 +3,42 @@
     margin: 0;
     padding: 0;
 }
+
+.box-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: lightblue;
+    position: relative;
+    overflow: hidden;
+}
+
+.box h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.box p {
+    padding: 20px;
+}
+
+#first {
+    background-color: teal;
+    color: white;
+}
+
+#second {
+    background-color: magenta;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(-400px);
+    transition: transform .3s ease-in;
+}
+
+.box-container:hover #second {
+    transform: translateX(0);
+}
+
