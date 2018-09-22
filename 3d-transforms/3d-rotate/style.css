@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    perspective: 800px;
+}
+
+#box {
+    transition: transform .3s ease-out;
+}
+
+#box img {
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+    margin: 50px auto;
+    border: 3px solid red;
+}
+
+#box:hover {
+    transform: rotate3d(1, 1, 1, 30deg);
+}
