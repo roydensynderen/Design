@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    background-color: orange;
+    padding: 10px;
+    color: white;
+}
+
+input[type='checkbox']:checked ~ p {
+    background-color: teal;
+    text-decoration: line-through;
+}
+
+input:valid + p {
+    background-color: lawngreen;
+    border: 1px solid green;
+}
+
+input:invalid + p {
+    background-color: red;
+    border: 1px solid maroon;
+}
+
+input:required + p {
+    border: 2px solid black;
+}
+
+input:optional + p {
+    color: white;
+}

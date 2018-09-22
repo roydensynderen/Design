@@ -1,0 +1,5 @@
+/* Targets immediate children, not grandchildren */
+.wrapper > p {
+    background-color: chocolate;
+}
+

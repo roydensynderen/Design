@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+/* Directly target adjacent element below '+' */
+h1 + div {
+    border: 5px solid black;
+}
+
+div {
+    height: 7vh;
+    width: 50%;
+    margin: 1px auto;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}

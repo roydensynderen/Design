@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    padding: 20px;
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+}
+
+/* TARGET ELEMENTS WITH TARGET PROPERTY
+a[target] {
+    border: 5px solid lightseagreen;
+}
+
+/* TARGET ATTRIBUTES WITH TYPES
+/* input[type='text'] {
+    border: 5px dotted pink;
+}
+
+input[type='password'] {
+    border: 5px dashed pink;
+} */
+
+/* p[lang|='en'] {
+    border: 5px solid chocolate;
+} */
+
+/* a[href^='http'] {
+    font-size: 1.1em;
+    font-style: italic;
+} */
+
+/* TARGETS TYPE OF ELEMENT */
+/* a[href$='pdf'] {
+    color: red;
+} */
+
+/* TARGETS TITLE WITH 'CAR' IN IT */
+/* p[title*='car'] {
+    text-decoration: line-through;
+} */
+
