@@ -4,10 +4,21 @@
     padding: 0;
 }
 
+body {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 p {
+    display: block;
+    margin: 10px auto;
     background-color: orange;
     padding: 10px;
     color: white;
+    width: 50%;
 }
 
 input[type='checkbox']:checked ~ p {
@@ -31,4 +42,8 @@ input:required + p {
 
 input:optional + p {
     color: white;
+}
+
+input::placeholder {
+    text-align: center;
 }

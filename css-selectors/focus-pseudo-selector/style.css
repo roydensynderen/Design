@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    width: 50%;
+    height: 20vh;
+    margin: 50px auto;
+}
+
+input {
+    transition: all .3s;
+    border: 1px solid lightgrey;
+    padding: 5px;
+}
+
+input:focus {
+    border: 2px solid teal;
+    outline: none;
+}
+
+button {
+    height: 4vh;
+    width: 7vw;
+    background-color: white;
+    border: 1px solid black;
+    transition: all .3s;
+}
+
+button:focus {
+    color: white;
+    background-color: teal;
+    border: 1px solid white;
+    outline: none;
+}

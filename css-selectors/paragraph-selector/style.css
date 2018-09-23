@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p:not(#second) {
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+.links {
+    height: 100vh;
+}
+
+/* Targets empty paragraphs */
+/* p:empty {
+    background-color: orange;
+} */
