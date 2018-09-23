@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: tomato;
+    height: 59px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 20.5px;
+    transition: all .3s;
+}
+
+li a:hover {
+    background-color: white;
+    color: tomato;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: tomato;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    width: 100%;
+}
+
+li:hover > .dropdown {
+    display: block;
+}
