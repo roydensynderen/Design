@@ -10,10 +10,39 @@ p:not(#second) {
 }
 
 .links {
-    height: 100vh;
+    height: 10vh;
 }
 
 /* Targets empty paragraphs */
 /* p:empty {
     background-color: orange;
 } */
+
+.first-last {
+    height: 20vh;
+}
+
+.first-last h3:first-child {
+    color: red;
+}
+.first-last h3:last-child {
+    color: blue;
+}
+
+.nth h5:nth-child(even) {
+    background-color: lightgreen;
+    padding: 20px
+}
+
+.nth h5:nth-child(3) {
+    background-color: teal;
+    padding: 20px
+}
+
+.nth h5:nth-last-child(1) {
+    color: rebeccapurple;
+}
+
+.nth h5:first-of-type {
+    color: yellowgreen;
+}

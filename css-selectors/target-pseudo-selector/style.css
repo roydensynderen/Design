@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    height: 70vh;
+}
+
+.carousel-container img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.controller {
+    width: 80%;
+    margin: 1px auto;
+}
+
+.controller a {
+    display: inline-block;
+    background-color: tomato;
+    width: 30%;
+    height: 190px;
+    margin: 5px;
+    background-size: cover;
+}
+
+.controller #c1 {
+    background-image: url('./blackwork.png');
+}
+.controller #c2 {
+    background-image: url('./rift.png');
+}
+.controller #c3 {
+    background-image: url('./drums.jpg');
+}
+
+img:target {
+    opacity: 1;
+}
