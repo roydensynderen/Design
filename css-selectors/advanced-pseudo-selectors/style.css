@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    background-color: tomato;
+    height: 35vh;
+    width: 50%;
+    margin: 50px auto;
+    padding: 3%;
+    color: white;
+}
+
+/* p::first-letter {
+    font-size: 3rem;
+} */
+
+/* p::first-line {
+    color: aquamarine;
+} */
+
+::selection {
+    background-color: white;
+    color: tomato;
+}
+
+p::before {
+    content: 'L';
+    float: left;
+    font-size: 70px;
+    margin: 0 8px 0 0;
+    color: lightgrey;
+    line-height: 60px;
+}
+
+/* p::after {
+    content: 'after';
+    display: block;
+} */
+
+.p-container {
+    height: 50vh;
+    width: 70vw;
+}

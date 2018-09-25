@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    background-color: cadetblue;
+}
+
+.box {
+    height: 100px;
+    width: 22%;
+    float: left;
+    margin: 5px;
+    background: teal;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}

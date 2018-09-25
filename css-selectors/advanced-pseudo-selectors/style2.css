@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+div p {
+    padding: 20px;
+    border: 2px solid teal;
+}
+
+div p:nth-child(1)::selection {
+    background-color: teal;
+    color: white;
+}
+
+div p:nth-child(2)::selection {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+div p:last-child::selection {
+    background-color: tomato;
+    color: white;
+}
