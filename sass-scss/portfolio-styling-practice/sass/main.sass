@@ -1,0 +1,91 @@
+//import other sass files
+@import 'functions'
+@import 'variables'
+@import 'mixins'
+
++google-font('Alegreya+Sans')    
++google-font('Titillium+Web')
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
++fancy-links
+
+body
+    font-family: sans-serif
+    font-size: em(18px)
+    color: $text-color
+    //hue, saturation, lightness
+    background-color: hsl(60, 50%, 100%)
+    +large-screens
+        font-size: 125%
+
+h1, h2, h3, h4 
+    font-family: $headline-font
+
+h2
+    +large-text
+
+p
+    font-family: $text-font
+
+a   
+    color: $link-color
+
+    &:hover
+        color: darken($link-color, 15%)
+
+.warning-btn
+    +warning
+
+#header
+    height: $header-height
+    background-color: $theme-color
+    +box($border: 1px solid orange)
+    +box-shadow(2px 0 4px #999, 1px 1px 6px $secondary-color)
+
+    #main-menu 
+        li
+            display: inline-block
+        a 
+            color: $menu-item-color
+            padding: 6px 8px
+            border-bottom: 1px solid transparentize(#fefefe, 1)
+            transition: border-bottom .5s ease-in-out
+
+            &:hover
+                border-bottom: 1px solid opacify(#fefefe, .5)
+
+#main   
+    width: $content-width
+    margin: 0 auto
+    +large-screens
+        width: auto
+        max-width: $content-width
+    
+    #content    
+        float: left
+        width: 6*$col
+    
+    #sidebar    
+        float: right
+        width: 2*$col
+
+        li 
+            list-style-type: none
+            padding: em(16px) em(20px)
+            border-bottom: 1px dashed #999
+
+            &:hover
+                background-color: #efefef
+                
+#footer     
+    height: $footer-height
+    background-color: $ternary-color
+    clear: both
+
++apply-to-ie-6
+    body 
+        font-size: 125%

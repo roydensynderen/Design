@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.125em;
+  color: #222222;
+  background-color: white;
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 125%;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: "Titillium Web", Georgia, serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+
+p {
+  font-family: "Alegreya Sans", Verdana, Arial, sans-serif;
+}
+
+a {
+  color: #f27731;
+}
+
+a:hover {
+  color: #ca510d;
+}
+
+.warning-btn {
+  background-color: orange;
+  color: white;
+  padding: 1%;
+}
+
+.warning-btn:hover {
+  background-color: #ffb733;
+}
+
+#header {
+  height: 60px;
+  background-color: #170a48;
+  border-radius: 6px;
+  border: 1px solid orange;
+  box-shadow: 2px 0 4px #999, 1px 1px 6px #f27731;
+  -moz-box-shadow: 2px 0 4px #999, 1px 1px 6px #f27731;
+  -webkit-box-shadow: 2px 0 4px #999, 1px 1px 6px #f27731;
+}
+
+#header #main-menu li {
+  display: inline-block;
+}
+
+#header #main-menu a {
+  color: white;
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(254, 254, 254, 0);
+  -webkit-transition: border-bottom .5s ease-in-out;
+  transition: border-bottom .5s ease-in-out;
+}
+
+#header #main-menu a:hover {
+  border-bottom: 1px solid #fefefe;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
+  #main {
+    width: auto;
+    max-width: 960px;
+  }
+}
+
+#main #content {
+  float: left;
+  width: 69.75%;
+}
+
+#main #sidebar {
+  float: right;
+  width: 23.25%;
+}
+
+#main #sidebar li {
+  list-style-type: none;
+  padding: 1em 1.25em;
+  border-bottom: 1px dashed #999;
+}
+
+#main #sidebar li:hover {
+  background-color: #efefef;
+}
+
+#footer {
+  height: 90px;
+  background-color: blue;
+  clear: both;
+}
+
+* html body {
+  font-size: 125%;
+}
+/*# sourceMappingURL=main.css.map */

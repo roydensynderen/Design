@@ -13,7 +13,7 @@
         {
             "type": "npm",
             "script": "test",
-            "path": "sass/",
+            "path": "css/",
             "group": {
                 "kind": "build",
                 "isDefault": true
