@@ -1,5 +1,73 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+.col-1 {
+  width: 2em;
+}
+
+.col-2 {
+  width: 4em;
+}
+
+.col-3 {
+  width: 6em;
+}
+
+.col-4 {
+  width: 8em;
+}
+
+.col-5 {
+  width: 10em;
+}
+
+.col-6 {
+  width: 12em;
+}
+
+.tiny {
+  font-size: 8px;
+}
+
+.small {
+  font-size: 11px;
+}
+
+.medium {
+  font-size: 13px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.bob-banker-profile {
+  background-image: url("/img/bob-banker.png");
+}
+
+.patty-plume-profile {
+  background-image: url("/img/patty-plume.png");
+}
+
+.sandra-smith-profile {
+  background-image: url("/img/sandra-smith.png");
+}
+
+.picture-2 {
+  width: 20%;
+}
+
+.picture-4 {
+  width: 40%;
+}
+
+.picture-6 {
+  width: 60%;
+}
+
+.picture-8 {
+  width: 80%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,10 +81,10 @@ a {
 }
 
 body {
+  background-color: #fff;
   font-family: sans-serif;
   font-size: 1.125em;
-  color: #222222;
-  background-color: white;
+  color: #000;
 }
 
 @media only screen and (max-width: 960px) {
@@ -40,11 +108,11 @@ p {
 }
 
 a {
-  color: #f27731;
+  color: #d26741;
 }
 
 a:hover {
-  color: #ca510d;
+  color: #a04626;
 }
 
 .warning-btn {
@@ -59,12 +127,12 @@ a:hover {
 
 #header {
   height: 60px;
-  background-color: #170a48;
+  background-color: #372a27;
   border-radius: 6px;
   border: 1px solid orange;
-  box-shadow: 2px 0 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0 4px #999, 1px 1px 6px #f27731;
+  box-shadow: 2px 0 4px #999, 1px 1px 6px #d26741;
+  -moz-box-shadow: 2px 0 4px #999, 1px 1px 6px #d26741;
+  -webkit-box-shadow: 2px 0 4px #999, 1px 1px 6px #d26741;
 }
 
 #header #main-menu li {
@@ -117,11 +185,44 @@ a:hover {
 
 #footer {
   height: 90px;
-  background-color: blue;
+  background-color: #b9da63;
   clear: both;
 }
 
 * html body {
   font-size: 125%;
+}
+
+.error, .critical-error, .cta-btn, .super-cta-btn {
+  color: red;
+}
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
+.cta-btn, .super-cta-btn {
+  background-color: orange;
+  color: white;
+  padding: 1%;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.cta-btn:hover, .super-cta-btn:hover {
+  background-color: #ffb733;
+}
+
+.super-cta-btn {
+  font-size: 1.25em;
+}
+
+.sub-title {
+  font-style: italic;
+}
+
+.sub-title {
+  font-size: 1.25em;
 }
 /*# sourceMappingURL=main.css.map */

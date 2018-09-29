@@ -3,6 +3,29 @@
 @import 'variables'
 @import 'mixins'
 
+//1 to 6 (stops at 6)
+@for $i from 1 through 6
+    .col-#{$i} 
+        width: $i * 2em
+
+//mapping
+$font-sizes: (tiny: 8px, small: 11px, medium: 13px, large: 18px) 
+@each $name, $size in $font-sizes
+    .#{$name}
+        font-size: $size
+
+$speakers: bob-banker, patty-plume, sandra-smith
+@each $speaker in $speakers
+    .#{$speaker}-profile
+        background-image: url('/img/#{$speaker}.png')
+
+$j: 2
+@while $j <= 8
+    .picture-#{$j}
+        width: $j * 10%
+    
+    $j: $j + 2
+
 +google-font('Alegreya+Sans')    
 +google-font('Titillium+Web')
 
@@ -13,12 +36,23 @@
 
 +fancy-links
 
+// $contrast: normal
+
 body
+    background-color: $body-background-color
     font-family: sans-serif
     font-size: em(18px)
     color: $text-color
+    // @if $contrast == high
+    //     color: black
+    // @else if $contrast == low
+    //     color: #999
+    // @else
+    //     color: $text-color
+
     //hue, saturation, lightness
-    background-color: hsl(60, 50%, 100%)
+    // background-color: hsl(60, 50%, 100%)
+
     +large-screens
         font-size: 125%
 
@@ -37,8 +71,11 @@ a
     &:hover
         color: darken($link-color, 15%)
 
-.warning-btn
+@mixin warning-btn
     +warning
+
+.warning-btn 
+    +warning-btn
 
 #header
     height: $header-height
@@ -89,3 +126,29 @@ a
 +apply-to-ie-6
     body 
         font-size: 125%
+
+.error
+    color: red
+
+.critical-error
+    @extend .error
+    bottom: 1px solid red
+    font-weight: bold
+
+.cta-btn 
+    +warning-btn
+    @extend .error
+    +rounded
+    font-weight: bold
+
+.super-cta-btn 
+    @extend .cta-btn
+    font-size: em(20px)
+
+%highlight
+    font-style: italic
+
+.sub-title 
+    @extend %highlight
+    @extend .fakeclass !optional
+    font-size: em(20px)
