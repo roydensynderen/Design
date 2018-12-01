@@ -1,0 +1,47 @@
+/* @lost cycle none; */
+@lost flexbox flex;
+
+.grid-item {
+	background: #2c3e50;
+	margin-bottom: 20px;
+}
+
+.grid-one {
+	lost-center: 100%;
+}
+
+.grid-one div {
+	lost-column: 1/1;
+	font-size: 2em;
+	color: white;
+}
+
+.grid-one div:first-child {
+	lost-move: 1/4;
+}
+
+.grid-one div:nth-child(2) {
+	lost-offset: -1/4;
+}
+
+@media screen and (min-width: 400px) {
+	.grid-one div {
+		lost-column: 1/2;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.grid-one div {
+		lost-column: 1/3;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.grid-one div {
+		lost-column: 1/4;
+	}
+}
+
+.responsive {
+	font-size: responsive 16px 36px;
+}
