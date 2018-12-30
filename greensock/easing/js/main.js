@@ -1,0 +1,1 @@
+!function(e){{var i=e("img");e("h2")}TweenLite.from(i,1,{x:-200,ease:SteppedEase.config(20)})}(jQuery);
