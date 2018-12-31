@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>GreenSock 101 - Transformation Points</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+        
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="perspective">
+
+            <!-- HTML Box -->
+            <div id="boxHTML" class="box">
+                <p>DIV</p>
+                <span id="htmlDOT"></span>
+            </div>
+        
+            <!-- SVG Box -->
+            <svg id="boxSVG" class="box" version="1.1"
+                baseProfile="full"
+                width="200" height="200"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <rect width="100%" height="100%" fill="#2b4d66" />
+                <circle class="circ" cx="100" cy="100" r="20" fill="#b1dec7" />
+                <text x="100" y="170" font-size="40" text-anchor="middle" fill="white">SVG</text>
+                <circle class="circStroke" cx="100" cy="100" r="95" fill="#2b4d66" />
+            </svg>
+        </div>
+
+        <p class="thanks">Thank You!</p>
+        
+        <!-- Helper lines -->
+        <div class="line centerH"></div>
+        <div class="line centerW"></div>
+
+        <div class="buttons">
+            <button id="btnNext">next</button>
+            <button id="btnPrev">prev</button>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js
+        "></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+        
+        <script src="src/js/main.js"></script>
+        
+    </body>
+</html>

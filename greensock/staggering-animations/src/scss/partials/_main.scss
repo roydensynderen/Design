@@ -1,0 +1,298 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+$green: #76c897;
+$blue: #2b4d66;
+$greenLight: #b1dec7;
+
+body {
+    font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial;
+    background-color:$green;
+    color: $blue;
+    padding-bottom: 200px;
+}
+h1{
+    text-transform: uppercase ;
+    font-size: 40px;
+    margin-bottom: 35px;
+    line-height: 1.5em;
+    span {
+        display: block;
+    }
+    em {
+        background-color: $greenLight;
+        height: 5px;
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        bottom: -14px;
+    }
+}
+.intro {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 50px;
+    line-height: 1.2em; 
+}
+
+/* =Header */
+header {
+    max-width: 500px;
+    padding-top: 15px;
+    margin: 0 auto;
+    text-align: center ;
+    em {
+        color: transparentize(#ffffff, 0.4);
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+h2 {
+    background-color: $blue;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal ;
+    margin: 0 5px 0 2px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.list {
+    list-style: none;
+    text-align: left;
+    margin: 0 5px 0 2px;
+    padding: 0;
+    font-size: 20px;  
+    a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: $blue;
+        background-color: #ebf3f7;
+        span {
+            transition: all 0.2s ease-out;
+            position: relative;
+            left: 0; 
+        }  
+        &:hover {
+            background-color: transparentize(#ebf3f7, 0.3);
+            span {
+                left: 8px;
+                transition: all 0.2s ease-out;
+            }
+        }
+    }
+    li {
+        margin: 0 0 1px 0;
+        padding: 0; 
+    } 
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    button {
+        width: 140px;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
